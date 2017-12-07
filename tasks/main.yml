@@ -1,0 +1,4 @@
+---
+
+- name: Copy pregenerated dhparam file 
+  copy: content="{{ dhparam_generated[dhparam_size] }} }}" dest="{{ dhparam_file }}"
